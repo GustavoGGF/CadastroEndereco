@@ -1,0 +1,121 @@
+:root {
+  --bg-color: #201b2c;
+  --secondary-bg-color: #3c3c4d;
+  --primary-color: #f9f9f9;
+  --secondary-color: #25cc88;
+  --text-color: #73759c;
+  --border-color: #20235b;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  align-items: center;
+}
+
+#checkout-page {
+  background: var(--bg-color);
+}
+
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fade .spinner-border {
+  width: 100px;
+  height: 100px;
+  z-index: 20;
+}
+
+#fade .hide {
+  display: none;
+}
+
+#message {
+  width: 40%;
+}
+
+.alert.alert-light p {
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.ZInd {
+  z-index: 60;
+}
+
+#form-header {
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#form-header h2 {
+  color: var(--primary-color);
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+#Text-LB {
+  color: rgb(160, 133, 133);
+}
+
+.TextLB {
+  color: var(--primary-color);
+}
+
+#order-form-container #cep {
+  width: 620px;
+}
+
+#order-form-container input,
+#order-form-container select {
+  background: var(--bg-color);
+  border: var(--border-color);
+  color: var(--primary-color);
+  width: 300px;
+}
+
+#order-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#order-form-container select {
+  padding: 1rem 0.75rem;
+}
+
+#order-form-container label {
+  left: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#order-form-container input:disabled,
+#order-form-container select:disabled {
+  background: var(--secondary-bg-color);
+}
+
+#order-form-container input:focus {
+  border: 2px solid var(--secondary-color);
+}
+
+#save-btn {
+  background: #25cc88;
+  border: none;
+  height: 3em;
+  width: 8em;
+  border-radius: 1.5em;
+  color: #000;
+  cursor: pointer;
+  z-index: 10;
+}
